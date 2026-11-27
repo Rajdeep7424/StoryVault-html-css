@@ -20,7 +20,6 @@ let navdata =`<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <li><a class="dropdown-item text-secondary" href="../../categories/drama.html">Drama</a></li>
                     <li><a class="dropdown-item text-secondary" href="../../categories/fantasy.html">Fantasy</a></li>
                     <li><a class="dropdown-item text-secondary" href="../../categories/horror.html">Horror</a></li>
-                    <li><a class="dropdown-item text-secondary" href="../../categories/mig.html">MiG</a></li>
                     <li><a class="dropdown-item text-secondary" href="../../categories/mystery.html">Mystery</a></li>
                     <li><a class="dropdown-item text-secondary" href="../../categories/psychology.html">Psychology</a></li>
                     <li><a class="dropdown-item text-secondary" href="../../categories/romance.html">Romance</a></li>
