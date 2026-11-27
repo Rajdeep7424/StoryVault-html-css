@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and stylesheets -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story Vault</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+<div id="navbar"></div>
+    
+
+    <div class="container my-5">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have a question, feedback, or a story to share, feel free to reach out.</p>
+
+        <form action="https://formspree.io/f/mbljjdyd" method="POST">
+            <div class="form-group">
+                <label for="name" required>Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" required>Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message/Comment:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+        
+            <div class="form-group">
+                <input type="checkbox" id="submitStoryCheckbox" name="submitStoryCheckbox">
+                <label for="submitStoryCheckbox">Would you like to submit a story?</label>
+            </div>
+        
+            <div id="storySubmission" class="story-submission">
+                <div class="form-group">
+                    <label for="storyTitle">Story Title:</label>
+                    <input type="text" class="form-control" id="storyTitle" name="storyTitle">
+                </div>
+                <div class="form-group">
+                    <label for="storyDescription">Story Description:</label>
+                    <textarea class="form-control" id="storyDescription" name="storyDescription" rows="3"></textarea>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="storyFile">Upload Story (PDF, Word, etc.):</label>
+                    <input type="file" class="form-control-file" id="storyFile" name="storyFile">
+                </div> -->
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        
+    </div>
+
+    <script>
+        // JavaScript to toggle the story submission fields
+        document.getElementById('submitStoryCheckbox').addEventListener('change', function() {
+            var storyFields = document.getElementById('storySubmission');
+            if (this.checked) {
+                storyFields.style.display = 'block';
+            } else {
+                storyFields.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <div id="mainfooter"></div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="components/js.js"></script>
+</body>
+</html>
